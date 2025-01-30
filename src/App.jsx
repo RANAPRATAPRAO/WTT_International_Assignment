@@ -8,7 +8,7 @@ function App() {
   const [membranes, setMembranes] = useState(0);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
+    <div>
       {!isLoggedIn ? (
         <Login onLogin={() => setIsLoggedIn(true)} />
       ) : membranes === 0 ? (
